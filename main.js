@@ -1,33 +1,33 @@
 
-const allButtons=document.getElementsByClassName('btn-select')
+const selectButtons=document.getElementsByClassName('btn-select')
 
 
 
-for(let i=0;i<allButtons.length;i++){
+for(let i=0;i<selectButtons.length;i++){
 
-   allButtons[i].addEventListener('click',function(){
+   selectButtons[i].addEventListener('click',function(){
     
 
-const playerName=document.getElementsByClassName('player-name')
+const nameOfPlayer=document.getElementsByClassName('players')
 
 
 
-const playerNameValue=playerName[i].innerText
+const playerNameValue=nameOfPlayer[i].innerText
 
 
-allButtons[i].disabled=true
-allButtons[i].backgroundColor='gray'
+selectButtons[i].disabled=true
+selectButtons[i].backgroundColor='black'
 
-///////
-const selectedPlayers=document.getElementById('selected-players')
+////////////
+const selectedPlayers=document.getElementById('selected-v')
 
 const playerList=document.createElement('li')
 
-const listLimit=selectedPlayers.childNodes.length
+const limit=selectedPlayers.childNodes.length
 
 playerList.innerHTML=playerNameValue
 
-if(listLimit >=0 && listLimit <=5){
+if(limit >=0 && limit <=5){
 
 selectedPlayers.appendChild(playerList)
 
@@ -35,21 +35,11 @@ selectedPlayers.appendChild(playerList)
 
 else{
 alert('You have selected more than five players')
-allButtons[i].disabled=false
+selectButtons[i].disabled=false
 
-allButtons[i].style.backgroundColor=' '
+selectButtons[i].style.backgroundColor=' '
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
    })
