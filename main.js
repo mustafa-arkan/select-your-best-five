@@ -106,16 +106,83 @@ const amountForTotalPlayer=lengthy*newPerPlayerCost
 
    playerCost.innerText=currentCost
 
-
+//console.log(currentCost)
 //total player cost done
 
-   
+
    })
 
 
+////////total player cost done//////////////////////////////
+
+   document.getElementById('btn-total').addEventListener('click',function(){
+
+
+//console.log('clicked')
+
+
+const managerCost=document.getElementById('manager')
+
+
+const managerCostString=managerCost.value
+
+const managerCostAmount=parseFloat(managerCostString)
+
+//console.log(managerCostAmount)
+
+//console.log(managerCostAmount)
+
+const coachCost=document.getElementById('coach')
+
+const coachCoststring=coachCost.value
+
+const coachcostAmount=parseFloat(coachCoststring)
+
+managerCost.value=' '
+coachCost.value=' '
+//coach and manager cost done successfully
+
+//console.log(coachcostAmount)
+
+//it's turn of player total
+
+////////player cost nia asa/////
+
+const perPlayerCostAgain=document.getElementById('perPlayer')
+
+//console.log('clicked')
+
+const perPlayerCostAgainString=perPlayerCostAgain.innerText
+
+
+   const setPlayerCost=parseFloat(perPlayerCostAgainString)
+
+
+   //console.log(setPlayerCost)
 
 
 
+
+
+//////player cost nia asa done successfully/////
+
+// const a=setPlayerCost+coachcostAmount+managerCostAmount
+
+// console.log(a)
+
+
+
+
+
+
+
+
+
+
+
+
+
+   })
 
 
 
