@@ -44,16 +44,6 @@ selectButtons[i].style.backgroundColor=' '
 
 
 
-
-
-
-
-///////
-
-
-
-////////
-
    })
 
 }
@@ -166,19 +156,29 @@ const perPlayerCostAgainString=perPlayerCostAgain.innerText
 
 //////player cost nia asa done successfully/////
 
-// const a=setPlayerCost+coachcostAmount+managerCostAmount
-
-// console.log(a)
 
 
+////it's total time
+
+
+const totalCost=document.getElementById('total-amount')
+
+   const previousTotalCostString=totalCost.innerText
+
+
+   const previousCost=parseFloat(previousTotalCostString)
+
+//console.log(previousCost)
+
+
+const totally=previousCost+coachcostAmount+managerCostAmount+setPlayerCost
+
+
+totalCost.innerText=totally
 
 
 
-
-
-
-
-
+////end of total
 
 
 
