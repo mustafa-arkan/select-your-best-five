@@ -18,7 +18,7 @@ const playerNameValue=nameOfPlayer[i].innerText
 selectButtons[i].disabled=true
 selectButtons[i].backgroundColor='black'
 
-////////////
+//select player
 const selectedPlayers=document.getElementById('selected-v')
 
 const playerList=document.createElement('li')
@@ -48,8 +48,7 @@ selectButtons[i].style.backgroundColor=' '
 
 }
 
-//////////////end of selected-v section
-
+//end of selected-v section
 
 
 
@@ -57,8 +56,9 @@ selectButtons[i].style.backgroundColor=' '
 document.getElementById('btn-perPlayerCalc').addEventListener('click',function(){
 
 
+    
    const perPlayerCost=document.getElementById('perPlayer-field')
-   const perPlayerCostString=perPlayerCost.value
+    const perPlayerCostString=perPlayerCost.value
    
    newPerPlayerCost=parseFloat(perPlayerCostString)
    //console.log(newPerPlayerCost)
