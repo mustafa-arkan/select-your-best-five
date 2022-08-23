@@ -64,13 +64,13 @@ document.getElementById('btn-perPlayerCalc').addEventListener('click',function()
    //console.log(newPerPlayerCost)
 //get per player field value.
 
-const selPlayers=document.getElementById('selected-v')
+const selectPlayers=document.getElementById('selected-v')
 
-const pist=document.createElement('li')
+const list=document.createElement('li')
 
-const lengthy=selPlayers.childNodes.length-1
+const lengthOfChild=selectPlayers.childNodes.length-1
 
-const amountForTotalPlayer=lengthy*newPerPlayerCost
+const amountForTotalPlayer=lengthOfChild*newPerPlayerCost
   
    //console.log(amountForTotalPlayer)
 
@@ -103,7 +103,7 @@ const amountForTotalPlayer=lengthy*newPerPlayerCost
    })
 
 
-////////total player cost done//////////////////////////////
+//total player cost done
 
    document.getElementById('btn-total').addEventListener('click',function(){
 
@@ -136,7 +136,7 @@ coachCost.value=' '
 
 //it's turn of player total
 
-////////player cost nia asa/////
+//player cost nia asa
 
 const perPlayerCostAgain=document.getElementById('perPlayer')
 
@@ -154,11 +154,11 @@ const perPlayerCostAgainString=perPlayerCostAgain.innerText
 
 
 
-//////player cost nia asa done successfully/////
+//player cost nia asa done successfully
 
 
 
-////it's total time
+//it's total time
 
 
 const totalCost=document.getElementById('total-amount')
@@ -178,7 +178,7 @@ totalCost.innerText=totally
 
 
 
-////end of total
+//end of total
 
 
 
